@@ -3,5 +3,9 @@ public class Number {
         int result= c > (a > b ? a : b) ? c : ((a > b) ? a : b);
         return result;
     }
+    public int smallest(int a,int b,int c){
+        int result=  c < (a < b ? a : b) ? c : ((a < b) ? a : b);;
+        return result;
+    }
 
 }
