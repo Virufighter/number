@@ -28,5 +28,14 @@ public class Number {
            System.out.println("odd");
        }
     }
+    public int reverse(int n){
+        int r=0;
+        int t=n;
+        while(t>0){
+            r=r+(t%10);
+            t=t/10;
+        }
+        return r;
+    }
 
 }
