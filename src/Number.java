@@ -10,7 +10,7 @@ public class Number {
     public void prime(int n){
         int f=1;
         for (int i=2;i<=n/2;i++){
-            if(n/2==0){
+            if(n%2==0){
                 f=0;
                 break;
             }
@@ -20,6 +20,13 @@ public class Number {
         }else {
             System.out.printf("not prime");
         }
+    }
+    public void even(int n){
+       if(n%2==0){
+           System.out.println("even");
+       }else {
+           System.out.println("odd");
+       }
     }
 
 }
